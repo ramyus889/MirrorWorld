@@ -1,0 +1,76 @@
+<svg
+  width="100"
+  height="101"
+  viewBox="0 0 100 101"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M49.4629 24.5094v12.291"
+    stroke="#FF4FF8"
+    stroke-width=".734266"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M68.7822 59.9749v12.2909"
+    stroke="#885EFF"
+    stroke-width=".734266"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M49.1183 46.6326v2.2675c0 1.6569-1.3432 3-3 3H32.1016c-1.6569 0-3 1.3432-3 3v.5117"
+    stroke="#4776FF"
+    stroke-width=".734266"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M49.1161 46.6326v2.2675c0 1.6569 1.3431 3 3 3h14.0167c1.6569 0 3 1.3432 3 3v.5117"
+    stroke="#4776FF"
+    stroke-width=".734266"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <rect
+    x="37.1826"
+    y="19.244"
+    width="25.2843"
+    height="9.83278"
+    rx="2.80936"
+    fill="#FF4FF8"
+  />
+  <rect
+    x="37.1826"
+    y="36.8019"
+    width="25.2843"
+    height="9.83278"
+    rx="2.80936"
+    fill="#4776FF"
+  />
+  <rect
+    x="16.8047"
+    y="54.3596"
+    width="25.2843"
+    height="9.83278"
+    rx="2.80936"
+    fill="#FFCC19"
+  />
+  <rect
+    x="56.1357"
+    y="54.3596"
+    width="25.2843"
+    height="9.83278"
+    rx="2.80936"
+    fill="#885EFF"
+  />
+  <rect
+    x="56.1357"
+    y="71.9175"
+    width="25.2843"
+    height="9.83278"
+    rx="2.80936"
+    fill="#FFCC19"
+  />
+</svg>
