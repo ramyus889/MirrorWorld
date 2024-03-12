@@ -31,7 +31,8 @@ export default function Home() {
                   </div>
                   <div className="">Phone: {obj.phone}</div>
                   <div className="">Website: {obj.website}</div>
-                  <div className="">Company: {obj.company.name}</div>
+                  <div className="">Company: {obj.company.name}</div>{" "}
+                  https://my-json-server.typicode.com/ramyus889/jsonServer
                 </div>
               </li>
             ))}
