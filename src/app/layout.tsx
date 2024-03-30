@@ -3,7 +3,7 @@ import { Mooli } from "next/font/google";
 import "./globals.css";
 import "/css/fontStyle.css";
 import "/css/Uiverse.css";
-import NavbarNextUi from "../componentsUi/components-NextUi/NavbarNextUi";
+import NavbarNextUi from "../componentsUi/NavbarNextUi";
 
 const fontStyle = Mooli({ subsets: ["latin"], weight: "400" });
 
