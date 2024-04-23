@@ -23,6 +23,7 @@ const config = {
         "2xl": "1124px",
       },
     },
+
     extend: {
       boxShadow: {
         neon: "0 0 20px 10px #4a59de, 0 0 40px 20px #4a59de, 0 0 60px 30px #4a59de",
@@ -90,7 +91,17 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui(), addVariablesForColors],
+  plugins: [
+    require("tailwindcss-animate"),
+    nextui({
+      layout: {
+        radius: {
+          large: "0.5rem",
+        },
+      },
+    }),
+    addVariablesForColors,
+  ],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {

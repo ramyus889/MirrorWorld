@@ -20,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={fontStyle.className}>
-        <NavbarNextUi />
-        {children}
+        <div className="overflow-x-hidden">
+          <NavbarNextUi />
+
+          {children}
+        </div>
       </body>
     </html>
   );
