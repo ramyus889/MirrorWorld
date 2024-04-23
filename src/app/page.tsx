@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="flex place-content-center font-['Inter']">
-      <div className="w-[400px] mt-20 ps-5 pe-10">
+      <div className="w-[400px] mt-10 ps-5 pe-10 mb-10">
         <Head />
         <History />
         <Footer />
