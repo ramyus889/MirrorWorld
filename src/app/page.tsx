@@ -1,16 +1,14 @@
 "use client";
 
-import Head from "./components/Head";
-import History from "./components/History";
-import Footer from "./components/Footer";
+import { useState } from "react";
 
 export default function Home() {
+  const [count, setCount] = useState(0);
   return (
-    <div className="flex place-content-center font-['Inter']">
-      <div className="w-[400px] mt-10 ps-5 pe-10 mb-10">
-        <Head />
-        <History />
-        <Footer />
+    <div className="mt-20 ms-20">
+      <div className="text-[40px] ">
+        <div className="">Frontend {count}</div>
+        <button onClick={() => setCount((count) => count + 1)}>Click</button>
       </div>
     </div>
   );
