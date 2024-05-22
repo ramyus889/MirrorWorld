@@ -2,5 +2,7 @@
     "cSpell.words": [
         "nextui",
         "tailwindcss"
-    ]
+    ],
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

@@ -13,7 +13,12 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo.jsx";
+
+import Image from "next/image";
+import logo from "/public/img/logo.svg";
+import logoB from "/public/img/tab-bar-icon.svg";
+import { BsDiscord } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -33,24 +38,23 @@ export default function App() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-          <AcmeLogo />
-          <Link className="pe-5" href="/">
-            Frontend
-          </Link>
+          <Image src={logo} alt="Acme Logo" width={150} height={28} />
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
             className={`  pe-5 ${
-              pathname === "/" ? "text-red-500 font-bold" : ""
+              pathname === "/"
+                ? "dark:text-white font-bold"
+                : "dark:text-slate-400 text-black"
             }`}
             href="/"
           >
@@ -60,41 +64,50 @@ export default function App() {
         <NavbarItem>
           <Link
             className={`  pe-5 ${
-              pathname === "/Work" ? "text-red-500 font-bold" : ""
+              pathname === "/About"
+                ? "text-white font-bold"
+                : "dark:text-slate-400 text-black"
             }`}
-            href="/Work"
+            href="/About"
           >
-            Work
+            About
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             className={`  pe-5 ps-5 ${
-              pathname === "/TailwindL" ? "text-red-500 font-bold" : ""
+              pathname === "/Resource"
+                ? "text-white font-bold"
+                : "dark:text-slate-400 text-black"
             }`}
-            href="/TailwindL"
+            href="/Resource"
           >
-            TailwindL
+            Resource
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             className={`  pe-5 ps-5 ${
-              pathname === "/RoutLink" ? "text-red-500 font-bold" : ""
+              pathname === "/Pricing"
+                ? "text-white font-bold"
+                : "dark:text-slate-400 text-black"
             }`}
-            href="/RoutLink"
+            href="/Pricing"
           >
-            RoutLink
+            Pricing
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+        <NavbarItem className="hidden lg:flex items-center gap-5">
+          <Image src={logoB} alt="Acme Logo" width={32} height={32} />
+          <AiOutlineTwitter size={26} />
+          <BsDiscord size={26} />
+          <Button
+            size="md"
+            className="border border-[#ddff1a] text-[#ddff1a]  px-[12px] bg-transparent"
+          >
+            Get Started
           </Button>
         </NavbarItem>
       </NavbarContent>

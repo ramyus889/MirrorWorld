@@ -1,15 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import React from "react";
+
+import Main from "./components/Main";
+import UserMurquee from "./components/UserMurquee";
+import CardPlatform from "./components/CardPlatform";
+import SmartPlatform from "./components/SmartPlatform";
+import Products from "./components/Products";
+import Audited from "./components/Audited";
+import InvestPatern from "./components/InvestPatern";
+import FootMain from "./components/FootMain";
+import LiveFoot from "./components/LiveFoot";
+import Footer from "./components/Footer";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
   return (
-    <div className="mt-20 ms-20">
-      <div className="text-[40px] ">
-        <div className="">Frontend {count}</div>
-        <button onClick={() => setCount((count) => count + 1)}>Click</button>
-      </div>
+    <div className="">
+      <Main />
+      <UserMurquee />
+      <CardPlatform />
+      <SmartPlatform />
+      <Products />
+      <Audited />
+      <InvestPatern />
+      <FootMain />
+      <LiveFoot />
+      <Footer/>
     </div>
   );
 }
