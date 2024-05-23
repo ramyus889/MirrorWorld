@@ -24,31 +24,20 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
+  const menuItems = ["Home", "About", "Resource", "Pricing"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="lg:hidden"
         />
         <NavbarBrand>
           <Image src={logo} alt="Acme Logo" width={150} height={28} />
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarItem>
           <Link
             className={`  pe-5 ${
@@ -99,13 +88,13 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex items-center gap-5">
+        <NavbarItem className="flex items-center gap-5">
           <Image src={logoB} alt="Acme Logo" width={32} height={32} />
           <AiOutlineTwitter size={26} />
           <BsDiscord size={26} />
           <Button
             size="md"
-            className="border border-[#ddff1a] text-[#ddff1a]  px-[12px] bg-transparent"
+            className="border sm:block hidden border-[#ddff1a] text-[#ddff1a]  px-[12px] bg-transparent"
           >
             Get Started
           </Button>
@@ -114,18 +103,7 @@ export default function App() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
+            <Link color="foreground" className="w-full" href="#" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>

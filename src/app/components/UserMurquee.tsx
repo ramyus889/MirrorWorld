@@ -3,6 +3,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const usericon = [
   {
@@ -35,13 +37,22 @@ const usericon = [
 ];
 
 export default function Home() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <div className="mt-[200px]">
       <div className="">
-        <div className="text-[20px] font-[800] mb-10 text-[#6c6c6c] text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-[20px] font-[800] mb-10 px-5 text-[#6c6c6c] text-center"
+        >
           Fueling the Future of Web3 Gaming
         </div>
-        <Marquee>
+        <Marquee data-aos="fade-up" data-aos-delay="200">
           {usericon.map((item, index) => (
             <div key={index} className="">
               <Image src={item.icon} alt="Marquee" width={180} height={81} />

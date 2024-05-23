@@ -10,14 +10,21 @@ import { AiFillApple } from "react-icons/ai";
 import { BsGooglePlay } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsAndroid } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <div className="mt-[200px]">
-      <div className="flex place-content-center">
+      <div className="flex place-content-center px-5">
         <div className="">
           <div className="text-[2.5rem] text-center mb-14">Live Demo</div>
-          <div className="flex gap-2">
+          <div className="flex flex-col xl:flex-row gap-2">
             <div className="flex flex-col">
               <Image src={logo} alt="Lamp" width={640} height={315} />
               <div className="bg-gradient-to-b from-[#00033300]  to-[#000333] p-[2.5rem] max-w-[640px] w-full">
@@ -32,7 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="flex flex-col gap-4 bg-[#ffffff0a] py-[90.5px] ps-[39px] pe-[37px]">
+              <div className="flex flex-col gap-4 bg-[#ffffff0a] py-[90.5px] ps-[39px] pe-[37px] rounded-none lg:rounded-tr-[20px]">
                 <div className="text-[#ddff1a] text-[1.6rem]">
                   Developer Version
                 </div>
@@ -52,11 +59,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-4 bg-[#ffffff0a] py-[90.5px] ps-[39px] pe-[37px]">
+              <div className="flex flex-col gap-4 bg-[#ffffff0a] py-[90.5px] ps-[39px] pe-[37px] rounded-bl-[20px] lg:rounded-bl-[0px] rounded-br-[20px]">
                 <div className="text-[#ddff1a] text-[1.6rem]">
                   Player Version
                 </div>
-                <div className="flex gap-5">
+                <div className="flex flex-wrap xl:flex-nowrap gap-5">
                   <Button
                     startContent={<BsGooglePlay size={20} />}
                     className="text-[0.97rem] bg-white text-black"

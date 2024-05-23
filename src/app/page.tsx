@@ -25,7 +25,7 @@ export default function Home() {
       <InvestPatern />
       <FootMain />
       <LiveFoot />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
