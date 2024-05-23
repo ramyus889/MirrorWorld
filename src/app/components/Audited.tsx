@@ -21,7 +21,7 @@ export default function Home() {
           Audited by
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="100"
           className="flex justify-between bg-[#ffffff0a] py-[40px] px-[3.3rem] w-full max-w-[46rem] rounded-[1.3rem]"
         >

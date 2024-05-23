@@ -51,7 +51,7 @@ export default function LampDemo() {
             </div>
             <div className="flex place-content-center lg:place-content-start gap-5">
               <Button
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-delay="500"
                 size="lg"
                 className=" text-black bg-[#ddff1a]"
@@ -59,7 +59,7 @@ export default function LampDemo() {
                 Get Started
               </Button>
               <Button
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-delay="600"
                 size="lg"
                 className="border border-[#ddff1a] text-[#ddff1a]   bg-transparent"

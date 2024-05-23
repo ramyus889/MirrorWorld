@@ -19,10 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning={true}>
+    <html
+      lang="en"
+      className="dark "
+      suppressHydrationWarning={true}
+    >
       <body className={fontStyle.className}>
         <Providers>
-          <div className="">
+          <div className="overflow-x-hidden">
             <NavbarNextUi />
             {children}
           </div>
