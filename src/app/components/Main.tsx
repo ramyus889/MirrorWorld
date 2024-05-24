@@ -14,7 +14,7 @@ export default function LampDemo() {
     });
   }, []);
   return (
-    <div className="lg:mt-[163px] mt-[50px] ">
+    <div className="lg:mt-[163px] mt-[130px] ">
       <div className="flex place-content-center ">
         <div className="flex flex-col lg:flex-row items-center gap-5 px-5">
           <div className="flex flex-col gap-5 ">
