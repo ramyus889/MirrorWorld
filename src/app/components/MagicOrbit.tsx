@@ -16,11 +16,11 @@ export default function OrbitingCirclesDemo() {
     });
   }, []);
   return (
-    <div className="lg:flex hidden place-content-center mt-[200px]">
+    <div className="flex  place-content-center mt-[200px]">
       <div
         data-aos="fade-up"
         data-aos-delay="400"
-        className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl"
+        className="relative flex max-w-[16rem] h-[250px] sm:h-[500px] w-full sm:max-w-[32rem] items-center justify-center overflow-hidden rounded-full sm:rounded-lg  bg-background md:shadow-xl"
       >
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           Mirror
@@ -33,7 +33,7 @@ export default function OrbitingCirclesDemo() {
           delay={20}
           radius={80}
         >
-         <SiTypescript />
+          <SiTypescript />
         </OrbitingCircles>
         <OrbitingCircles
           className="h-[30px] w-[30px] border-none bg-transparent"
@@ -41,7 +41,7 @@ export default function OrbitingCirclesDemo() {
           delay={10}
           radius={80}
         >
-           <SiTailwindcss />
+          <SiTailwindcss />
         </OrbitingCircles>
 
         {/* Outer Circles (reverse) */}
@@ -52,7 +52,6 @@ export default function OrbitingCirclesDemo() {
           duration={20}
         >
           <TbBrandNextjs size={30} />
-         
         </OrbitingCircles>
         <OrbitingCircles
           className="h-[50px] w-[50px] border-none bg-transparent"
@@ -61,8 +60,7 @@ export default function OrbitingCirclesDemo() {
           duration={20}
           delay={20}
         >
-           <FaReact size={30} />
-          
+          <FaReact size={30} />
         </OrbitingCircles>
       </div>
     </div>
