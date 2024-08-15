@@ -1,19 +1,17 @@
 "use client";
 
-import React from "react";
-
-import Main from "./components/Main";
-import UserMurquee from "./components/UserMurquee";
 import AnimBeam from "./components/AnimBeam";
-import CardPlatform from "./components/CardPlatform";
-import SmartPlatform from "./components/SmartPlatform";
-import Products from "./components/Products";
 import Audited from "./components/Audited";
-import Intern from "./components/Intern";
-import MagicOrbit from "./components/MagicOrbit";
-import FootMain from "./components/FootMain";
-import LiveFoot from "./components/LiveFoot";
+import CardPlatform from "./components/CardPlatform";
 import Footer from "./components/Footer";
+import FootMain from "./components/FootMain";
+import Intern from "./components/Intern";
+import LiveFoot from "./components/LiveFoot";
+import MagicOrbit from "./components/MagicOrbit";
+import Main from "./components/Main";
+import Products from "./components/Products";
+import SmartPlatform from "./components/SmartPlatform";
+import UserMurquee from "./components/UserMurquee";
 
 export default function Home() {
   return (
