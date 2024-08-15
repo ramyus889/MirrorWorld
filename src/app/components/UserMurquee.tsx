@@ -1,42 +1,14 @@
 "use client";
 
-import React from "react";
-import Marquee from "react-fast-marquee";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const usericon = [
-  {
-    icon: "/img/Marq1.webp",
-  },
-  {
-    icon: "/img/Marq2.webp",
-  },
-  {
-    icon: "/img/Marq3.webp",
-  },
-  {
-    icon: "/img/Marq4.webp",
-  },
-  {
-    icon: "/img/Marq5.webp",
-  },
-  {
-    icon: "/img/Marq6.webp",
-  },
-  {
-    icon: "/img/Marq7.webp",
-  },
-  {
-    icon: "/img/Marq8.webp",
-  },
-  {
-    icon: "/img/Marq9.webp",
-  },
-];
+import Image from "next/image";
+import React from "react";
+import Marquee from "react-fast-marquee";
+import useCustomHooks from "../hooks/useCustomHooks";
 
 export default function Home() {
+  const { usericon } = useCustomHooks();
   React.useEffect(() => {
     AOS.init({
       duration: 800,

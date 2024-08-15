@@ -1,61 +1,16 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
-import platform from "/public/img/component-152.svg";
-import platform2 from "/public/img/component-1521.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const multimage = [
-  {
-    icon: "/img/eth.webp",
-  },
-  {
-    icon: "/img/matic.webp",
-  },
-  {
-    icon: "/img/bnb.webp",
-  },
-  {
-    icon: "/img/solana.webp",
-  },
-  {
-    icon: "/img/sui.webp",
-  },
-  {
-    icon: "/img/sea.webp",
-  },
-  {
-    icon: "/img/ana.webp",
-  },
-  {
-    icon: "/img/op.webp",
-  },
-  {
-    icon: "/img/oasys.webp",
-  },
-];
-const multimage2 = [
-  {
-    icon: "/img/ios.webp",
-  },
-  {
-    icon: "/img/android.webp",
-  },
-  {
-    icon: "/img/unity.webp",
-  },
-  {
-    icon: "/img/rust.webp",
-  },
-  {
-    icon: "/img/js.webp",
-  },
-];
+import useCustomHooks from "../hooks/useCustomHooks";
+import platform from "/public/img/component-152.svg";
+import platform2 from "/public/img/component-1521.svg";
 
 export default function Home() {
+  const { multimage, multimage2 } = useCustomHooks();
   React.useEffect(() => {
     AOS.init({
       duration: 800,

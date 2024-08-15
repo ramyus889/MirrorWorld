@@ -1,33 +1,12 @@
 "use client";
 
-import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const cardplatform = [
-  {
-    textgreen: "3rd",
-    textwhite: "On Product Hunt",
-    delay: "300",
-  },
-  {
-    textgreen: "140,000+",
-    textwhite: "Community Members",
-    delay: "400",
-  },
-  {
-    textgreen: "2,000+",
-    textwhite: "Projects Built on Smart Platform",
-    delay: "500",
-  },
-  {
-    textgreen: "15 min",
-    textwhite: "Full Integration Time",
-    delay: "600",
-  },
-];
+import React from "react";
+import useCustomHooks from "../hooks/useCustomHooks";
 
 export default function Home() {
+  const { cardplatform } = useCustomHooks();
   React.useEffect(() => {
     AOS.init({
       duration: 800,

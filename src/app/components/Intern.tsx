@@ -2,76 +2,13 @@
 
 import React from "react";
 
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const image = [
-  {
-    icon: "/img/galaxy.webp",
-  },
-  {
-    icon: "/img/republic-crypto.webp",
-  },
-  {
-    icon: "/img/mirana-ventures.svg",
-  },
-  {
-    icon: "/img/okx-ventures.webp",
-  },
-  {
-    icon: "/img/ivc.webp",
-  },
-  {
-    icon: "/img/alchemy-ventures.svg",
-  },
-  {
-    icon: "/img/sky9-capital.svg",
-  },
-  {
-    icon: "/img/smrti-labs.webp",
-  },
-  {
-    icon: "/img/lucid-blue.svg",
-  },
-  {
-    icon: "/img/Marq7.webp",
-  },
-];
-const image2 = [
-  {
-    icon: "/img/Property1.webp",
-  },
-  {
-    icon: "/img/solana.svg",
-  },
-  {
-    icon: "/img/Property2.svg",
-  },
-  {
-    icon: "/img/Property3.svg",
-  },
-  {
-    icon: "/img/Property4.svg",
-  },
-  {
-    icon: "/img/Property5.svg",
-  },
-  {
-    icon: "/img/Property6.svg",
-  },
-  {
-    icon: "/img/Property7.svg",
-  },
-  {
-    icon: "/img/Property8.webp",
-  },
-  {
-    icon: "/img/Property9.svg",
-  },
-];
+import Image from "next/image";
+import useCustomHooks from "../hooks/useCustomHooks";
 
 export default function Home() {
+  const { image, image2 } = useCustomHooks();
   React.useEffect(() => {
     AOS.init({
       duration: 800,
